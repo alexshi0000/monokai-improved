@@ -1,1 +1,1 @@
-# vim-improved
+# monokai-improved
