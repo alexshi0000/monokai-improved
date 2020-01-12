@@ -19,7 +19,7 @@ let s:gray1     = '#1b1b1b'
 let s:gray2     = '#242424'
 let s:gray3     = '#363636'
 let s:gray4     = '#545454'
-let s:gray5     = '#F7F9FB'
+let s:gray5     = '#F5F6F9'
 let s:red       = '#FF5794'
 let s:green     = '#B2E64C'
 let s:yellow    = '#E6DB7A'
@@ -102,8 +102,8 @@ call s:HL('Identifier',                     s:red,   '',         'none')
 call s:HL('Function',                       s:green,    '',         'italic')
 call s:HL('Statement',                      s:red,      '',         'none')
 call s:HL('Operator',                       s:red,     '',         'none')
-call s:HL('PreProc',                        s:purple,     '',         '')
-call s:HL('Define',                         s:purple,     '',         '')
+call s:HL('PreProc',                        s:cyan,     '',         '')
+call s:HL('Define',                         s:cyan,     '',         '')
 call s:HL('Macro',                          s:cyan,     '',         'italic')
 call s:HL('Type',                           s:cyan,     '',         'none')
 call s:HL('Structure',                      s:cyan,     '',         '')
@@ -179,7 +179,54 @@ call s:HL('rubyStringDelimiter',            s:green,    '',         '')
 call s:HL('rubyRegexpSpecial',              s:cyan,     '',         '')
 
 " Java
+call s:HL('javaConstant',                   s:red,     '',         '')
+call s:HL('javaBoolean',                    s:purple,     '',         '')
+call s:HL('javaStatement',                  s:red,     '',         '')
+call s:HL('javaConditional',                s:red,     '',         '')
+call s:HL('javaRepeat',                     s:red,     '',         '')
+call s:HL('javaOperator',                   s:gray5,     '',         '')
+call s:HL('javaAccessKeyword',              s:red,     '',         '')
+call s:HL('javaException',                  s:red,     '',         '')
+call s:HL('javaPreProc',                    s:green,     '',         '')
+call s:HL('javaType',                       s:cyan,     '',         '')
+call s:HL('javaStorage',                    s:red,     '',         '')
+call s:HL('javaStructure',                  s:red,     '',         '')
+call s:HL('javaError',                      s:brown,     '',         '')
+call s:HL('javaTodoNote',                   s:brown,     '',         '')
+call s:HL('javaTodoTask',                   s:brown,     '',         '')
+call s:HL('javaTodoWarn',                   s:brown,     '',         '')
+call s:HL('javaInclude',                    s:green,     '',         '')
+call s:HL('javaPackagePath',                s:green,     '',         '')
+call s:HL('javaIdentifier',                 s:gray5,     '',         '')
+call s:HL('javaFunction',                   s:green,     '',         '')
+call s:HL('javaString',                     s:yellow,     '',         '')
+call s:HL('javaDelimiter',                  s:gray5,     '',         '')
+call s:HL('javaSpecialChar',                s:gray5,     '',         '')
+call s:HL('javaSpecial',                    s:gray5,     '',         '')
+call s:HL('javaTag',                        s:gray5,     '',         '')
+call s:HL('javaMacro',                      s:gray5,     '',         '')
+call s:HL('javaDefine',                     s:gray5,     '',         '')
 
+" Python
+call s:HL('pythonRepeat',                   s:red,     '',         '')
+call s:HL('pythonConditional',              s:red,     '',         '')
+call s:HL('pythonInclude',                  s:red,     '',         '')
+call s:HL('pythonTodo',                     s:brown,     '',         '')
+call s:HL('pythonComment',                  s:gray4,     '',         '')
+call s:HL('pythonStatement',                s:cyan,     '',         '')
+call s:HL('pythonSelf',                     s:orange,     '',         '')
+call s:HL('pythonClassParameters',          s:orange,     '',         '')
+call s:HL('pythonFunctionParameters',       s:orange,     '',         '')
+call s:HL('pythonConstant',                 s:purple,     '',         '')
+call s:HL('pythonBuiltin',                  s:cyan,     '',         '')
+call s:HL('pythonDecorator',                s:cyan,     '',         '')
+call s:HL('pythonEscape',                   s:red,     '',         '')
+call s:HL('pythonSpaceError',               s:red,     '',         '')
+call s:HL('pythonException',                s:red,     '',         '')
+call s:HL('pythonExceptions',               s:red,     '',         '')
+call s:HL('pythonDoctest',                  s:red,     '',         '')
+call s:HL('pythonDoctestValue',             s:red,     '',         '')
+call s:HL('pythonAsync',                    s:purple,     '',         '')
 
 " Vim-Fugitive
 call s:HL('diffAdded',                      s:green,    '',         '')
