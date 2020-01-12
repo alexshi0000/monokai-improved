@@ -113,17 +113,17 @@ call s:HL('Error',                          s:red,      s:gray0,    'underline')
 call s:HL('Todo',                           s:brown,     s:gray0,    'underline')
 
 " CSS/Sass/Less
-call s:HL('cssAttrComma',                   s:gray5,    '',         '')
-call s:HL('cssAttributeSelector',           s:purple,    '',         '')
-call s:HL('cssBraces',                      s:gray5,    '',         '')
+call s:HL('cssAttrComma',                   s:gray5,   '',         '')
+call s:HL('cssAttributeSelector',           s:purple,  '',         '')
+call s:HL('cssBraces',                      s:gray5,   '',         '')
 call s:HL('cssClassName',                   s:green,   '',         '')
 call s:HL('cssClassNameDot',                s:gray5,   '',         '')
-call s:HL('cssIdentifier',                  s:red,   '',         '')
+call s:HL('cssIdentifier',                  s:red,     '',         '')
 call s:HL('cssImportant',                   s:brown,   '',         '')
-call s:HL('cssMediaType',                   s:orange,   '',         '')
+call s:HL('cssMediaType',                   s:orange,  '',         '')
 call s:HL('cssProp',                        s:cyan,    '',         '')
-call s:HL('cssSelectorOp',                  s:yellow,     '',         '')
-call s:HL('cssSelectorOp2',                 s:yellow,     '',         '')
+call s:HL('cssSelectorOp',                  s:yellow,  '',         '')
+call s:HL('cssSelectorOp2',                 s:yellow,  '',         '')
 
 call s:HL('sassAmpersand',                  s:cyan,     '',         '')
 call s:HL('sassClass',                      s:orange,   '',         '')
@@ -158,8 +158,8 @@ hi link gitcommitUnmergedArrow  gitcommitUnmergedFile
 
 " HTML
 call s:HL('htmlArg',                        s:green,   '',         '')
-call s:HL('htmlEndTag',                     s:cyan,   '',         '')
-call s:HL('htmlTag',                        s:cyan,   '',         '')
+call s:HL('htmlEndTag',                     s:gray5,   '',         '')
+call s:HL('htmlTag',                        s:gray5,   '',         '')
 call s:HL('htmlTagName',                    s:red,     '',         '')
 call s:HL('htmlTitle',                      s:yellow,    '',         '')
 
