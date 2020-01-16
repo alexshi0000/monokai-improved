@@ -398,11 +398,3 @@ syn match   pythonMemberCall	"\.\h\w*\ze("
 syn match   pythonSelf		"\<self\>"
   delcommand HiLink
 endif
-
-let b:current_syntax = "python"
-setlocal spelllang=en_gb
-
-   call rainbow_parenthsis#LoadSquare ()
-   call rainbow_parenthsis#LoadRound ()           
-   call rainbow_parenthsis#LoadBraces ()           
-   call rainbow_parenthsis#Activate ()
