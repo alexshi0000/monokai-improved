@@ -252,9 +252,9 @@ hi link GitGutterDelete SignifySignDelete
 call s:HL('GitGutterChangeDelete',          s:orange,   '',         '')
 
 " Vim-Signify
-call s:HL('SignifySignAdd',                 s:green,    '',         '')
-call s:HL('SignifySignChange',              s:yellow,   '',         '')
-call s:HL('SignifySignDelete',              s:red,      '',         '')
+call s:HL('SignifySignAdd',                 s:green,    s:gray1,         '')
+call s:HL('SignifySignChange',              s:yellow,   s:gray1,         '')
+call s:HL('SignifySignDelete',              s:red,      s:gray1,         '')
 
 " Ctrlp
 
