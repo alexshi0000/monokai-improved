@@ -240,6 +240,11 @@ call s:HL('pythonMember',                   s:green, '', '')
 call s:HL('pythonMemberCall',               s:green, '', '')
 call s:HL('pythonSelf',                     s:orange, '', '')
 
+" C++
+call s:HL('cCustomPtr',                     s:cyan, '', '')
+call s:HL('cCustomDot',                     s:cyan, '', '')
+call s:HL('cCustomMemberVar',               s:cyan, '', '')
+call s:HL('cOperator',                      s:red, '', '')
 
 " VimsFugitive
 call s:HL('diffAdded',                      s:green,    '',         '')
