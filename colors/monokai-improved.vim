@@ -14,11 +14,13 @@ let g:colors_name = 'monokai-improved'
 let g:deepspace_italics = get(g:, 'deepspace_italics', 0)
 
 " Color Palette
-let s:gray0     = '#161616'
-let s:gray1     = '#1b1b1b'
-let s:gray2     = '#242424'
+let s:black     = '#0f0f0f'
+let s:gray0     = '#131313'
+let s:gray1     = '#191919'
+let s:gray2     = '#262626'
 let s:gray3     = '#363636'
 let s:gray4     = '#545454'
+let s:gray45    = '#EEEEEE'
 let s:gray5     = '#F5F6F9'
 let s:red       = '#FF5794'
 let s:green     = '#B2E64C'
@@ -63,17 +65,17 @@ call s:HL('DiffChange',                     s:gray5,    s:yellow,   'none')
 call s:HL('DiffDelete',                     s:gray5,    s:red,      'none')
 call s:HL('DiffText',                       s:gray0,    s:cyan,     'none')
 call s:HL('ErrorMsg',                       s:red,      s:gray0,    'bold')
-call s:HL('VertSplit',                      s:gray4,    s:gray0,    'none')
-call s:HL('Folded',                         s:gray5,     s:gray4,    '')
-call s:HL('FoldColumn',                     s:brown,     s:gray2,    '')
-call s:HL('SignColumn',                     s:gray2,    s:gray0,    '')
-call s:HL('LineNr',                         s:gray4,    s:gray1,         '')
-call s:HL('CursorLineNr',                   s:gray5,    s:gray2,    'none')
+call s:HL('VertSplit',                      s:gray3,    s:gray0,    'none')
+call s:HL('Folded',                         s:gray5,    s:gray4,    '')
+call s:HL('FoldColumn',                     s:brown,    s:gray2,    '')
+call s:HL('SignColumn',                     s:gray2,    s:black,    '')
+call s:HL('LineNr',                         s:gray3,    s:black,         '')
+call s:HL('CursorLineNr',                   s:gray45,    s:gray1,    'none')
 call s:HL('MatchParen',                     '',    s:gray4,     'underline')
 call s:HL('ModeMsg',                        s:cyan,    '',         '')
 call s:HL('MoreMsg',                        s:cyan,    '',         '')
 call s:HL('NonText',                        s:gray3,    s:gray0,         '')
-call s:HL('Normal',                         s:gray5,    s:gray0,    'none')
+call s:HL('Normal',                         s:gray45,    s:gray0,    'none')
 call s:HL('Pmenu',                          s:gray5,    s:gray2,    '')
 call s:HL('PmenuSel',                       s:gray0,    s:cyan,     '')
 call s:HL('PmenuSbar',                      s:gray2,    s:gray3,    '')
@@ -257,9 +259,9 @@ hi link GitGutterDelete SignifySignDelete
 call s:HL('GitGutterChangeDelete',          s:orange,   '',         '')
 
 " Vim-Signify
-call s:HL('SignifySignAdd',                 s:green,    s:gray1,         '')
-call s:HL('SignifySignChange',              s:yellow,   s:gray1,         '')
-call s:HL('SignifySignDelete',              s:red,      s:gray1,         '')
+call s:HL('SignifySignAdd',                 s:green,    s:black,         '')
+call s:HL('SignifySignChange',              s:yellow,   s:black,         '')
+call s:HL('SignifySignDelete',              s:red,      s:black,         '')
 
 " Ctrlp
 
