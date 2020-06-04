@@ -14,6 +14,7 @@ let g:colors_name = 'monokai-improved'
 let g:deepspace_italics = get(g:, 'deepspace_italics', 0)
 
 " Color Palette
+let s:blackest  = '#000000'
 let s:black     = '#0f0f0f'
 let s:gray0     = '#131313'
 let s:gray1     = '#191919'
@@ -264,12 +265,17 @@ call s:HL('SignifySignChange',              s:yellow,   s:black,         '')
 call s:HL('SignifySignDelete',              s:red,      s:black,         '')
 
 " Ctrlp
-
 hi! link CtrlPMatch TODO
 hi! link CtrlPNoEntries SpellBad
 hi! link CtrlPPrtBase Comment
 hi! link CtrlPPrtCursor TabLineSel
 hi! link CtrlPLinePre JavaScriptReserved
+
+" Buftabline
+call s:HL('BufTabLineCurrent',                 s:brown,    s:gray1,         '')
+call s:HL('BufTabLineActive',              s:gray4,   s:black,         '')
+call s:HL('BufTabLineHidden',              s:gray4,      s:black,         '')
+call s:HL('BufTabLineFill',              s:blackest,      s:blackest,         '')
 
 call s:HL('CtrlPMode1', s:cyan, s:gray3, '')
 call s:HL('CtrlPMode2', s:gray3, s:cyan, '')
