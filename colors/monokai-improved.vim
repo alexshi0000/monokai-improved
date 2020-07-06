@@ -20,9 +20,9 @@ let s:gray0     = '#131313'
 let s:gray1     = '#191919'
 let s:gray2     = '#262626'
 let s:gray3     = '#363636'
-let s:gray4     = '#545454'
+let s:gray4     = '#565656'
 let s:gray45    = '#EEEEEE'
-let s:gray5     = '#F5F6F9'
+let s:gray5     = '#EFF0F1'
 let s:red       = '#FF5794'
 let s:green     = '#B2E64C'
 let s:yellow    = '#E6DB7A'
@@ -73,10 +73,10 @@ call s:HL('SignColumn',                     s:gray2,    s:black,    '')
 call s:HL('LineNr',                         s:gray3,    s:black,         '')
 call s:HL('CursorLineNr',                   s:gray45,    s:gray1,    'none')
 call s:HL('MatchParen',                     '',    s:gray4,     'underline')
-call s:HL('ModeMsg',                        s:cyan,    '',         '')
-call s:HL('MoreMsg',                        s:cyan,    '',         '')
+call s:HL('ModeMsg',                        s:gray5,    '',         '')
+call s:HL('MoreMsg',                        s:brown,    '',         '')
 call s:HL('NonText',                        s:gray3,    s:gray0,         '')
-call s:HL('Normal',                         s:gray45,    s:gray0,    'none')
+call s:HL('Normal',                         s:gray5,    s:gray0,    'none')
 call s:HL('Pmenu',                          s:gray5,    s:gray2,    '')
 call s:HL('PmenuSel',                       s:gray0,    s:cyan,     '')
 call s:HL('PmenuSbar',                      s:gray2,    s:gray3,    '')
@@ -113,7 +113,7 @@ call s:HL('Structure',                      s:cyan,     '',         '')
 call s:HL('Special',                        s:orange,     '',         '')
 call s:HL('Underlined',                     s:green,     '',         'none')
 call s:HL('Error',                          s:red,      s:gray0,    'underline')
-call s:HL('Todo',                           s:brown,     s:gray0,    'underline')
+call s:HL('Todo',                           s:orange,     s:gray0,    'underline')
 
 " CSS/Sass/Less
 call s:HL('cssAttrComma',                   s:gray5,   '',         '')
@@ -272,10 +272,10 @@ hi! link CtrlPPrtCursor TabLineSel
 hi! link CtrlPLinePre JavaScriptReserved
 
 " Buftabline
-call s:HL('BufTabLineCurrent',                 s:brown,    s:gray1,         '')
-call s:HL('BufTabLineActive',              s:gray4,   s:black,         '')
-call s:HL('BufTabLineHidden',              s:gray4,      s:black,         '')
-call s:HL('BufTabLineFill',              s:blackest,      s:blackest,         '')
+call s:HL('BufTabLineCurrent',             s:gray5,    s:gray1,         '')
+call s:HL('BufTabLineActive',              s:gray4,    s:black,         '')
+call s:HL('BufTabLineHidden',              s:gray4,    s:black,         '')
+call s:HL('BufTabLineFill',                s:blackest, s:blackest,         '')
 
 call s:HL('CtrlPMode1', s:cyan, s:gray3, '')
 call s:HL('CtrlPMode2', s:gray3, s:cyan, '')
